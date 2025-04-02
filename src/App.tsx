@@ -10,7 +10,7 @@ function App() {
     zoom: 18,
   });
 
-  const handleClick = (event: MapEvent) => {
+  const handleClick = (event: any) => {
     console.log(event);
     const { lng, lat } = event.lngLat;
     setViewState({
