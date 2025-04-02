@@ -10,7 +10,7 @@ function App() {
     zoom: 18,
     bearing: 0,
     pitch: 0,
-    padding: { top: 0, bottom: 0, left: 0, right: 0 },
+    padding: { width: 100, height: 100 },
   });
 
   const handleClick = (event: MapEvent) => {
@@ -22,7 +22,7 @@ function App() {
       zoom: 18,
       bearing: 0,
       pitch: 0,
-      padding: { top: 0, bottom: 0, left: 0, right: 0 },
+      padding: { width: 100, height: 100 },
     });
   };
 
