@@ -1,22 +1,28 @@
 import { useState } from "react";
 import { Map } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css"; // See notes below
-// import { MapEvent } from "@vis.gl/react-maplibre";
+import { MapEvent } from "@vis.gl/react-maplibre";
 
 function App() {
   const [viewState, setViewState] = useState({
     longitude: -100,
     latitude: 40,
     zoom: 18,
+    bearing: 0,
+    pitch: 0,
+    padding: { top: 0, bottom: 0, left: 0, right: 0 },
   });
 
-  const handleClick = (event: any) => {
+  const handleClick = (event: MapEvent) => {
     console.log(event);
     const { lng, lat } = event.lngLat;
     setViewState({
       longitude: lng,
       latitude: lat,
       zoom: 18,
+      bearing: 0,
+      pitch: 0,
+      padding: { top: 0, bottom: 0, left: 0, right: 0 },
     });
   };
 
