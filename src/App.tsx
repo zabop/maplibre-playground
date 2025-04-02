@@ -10,7 +10,7 @@ function App() {
         zoom: 4.5,
       }}
       style={{ width: "100vw", height: "100vh" }}
-      mapStyle="https://demotiles.maplibre.org/style.json"
+      mapStyle="https://api.maptiler.com/maps/hybrid/style.json?key=iG31hHzqPDdOfM8MmYsP"
     />
   );
 }
