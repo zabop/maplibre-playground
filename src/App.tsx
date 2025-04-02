@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Map, MapEvent } from "@vis.gl/react-maplibre";
+import { Map } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 function App() {
