@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Map } from "@vis.gl/react-maplibre";
-import "maplibre-gl/dist/maplibre-gl.css"; // See notes below
-import { MapEvent } from "@vis.gl/react-maplibre";
+import { Map, MapEvent } from "@vis.gl/react-maplibre";
+import "maplibre-gl/dist/maplibre-gl.css";
 
 function App() {
   const [viewState, setViewState] = useState({
@@ -10,10 +9,12 @@ function App() {
     zoom: 18,
     bearing: 0,
     pitch: 0,
-    padding: { width: 100, height: 100 },
+    padding: { top: 100, bottom: 100, left: 100, right: 100 },
+    width: 100,
+    height: 100,
   });
 
-  const handleClick = (event: MapEvent) => {
+  const handleClick = (event: any) => {
     console.log(event);
     const { lng, lat } = event.lngLat;
     setViewState({
@@ -22,7 +23,9 @@ function App() {
       zoom: 18,
       bearing: 0,
       pitch: 0,
-      padding: { width: 100, height: 100 },
+      padding: { top: 100, bottom: 100, left: 100, right: 100 },
+      width: 100,
+      height: 100,
     });
   };
 
