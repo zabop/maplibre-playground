@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Map } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css"; // See notes below
-import { MapEvent } from "@vis.gl/react-maplibre";
+// import { MapEvent } from "@vis.gl/react-maplibre";
 
 function App() {
   const [viewState, setViewState] = useState({
